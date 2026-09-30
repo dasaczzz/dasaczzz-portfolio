@@ -1,1 +1,11 @@
-<h1>hello world</h1>
+---
+import Button from './Button.astro'
+---
+
+<nav class='h-25 px-10 flex flex-row justify-end'>
+  <ol class='flex items-center gap-8 list-decimal list-inside text-contrast font-fragment text-lg *:cursor-pointer'>
+    <li>experiences</li>
+    <li>About me</li>
+    <Button text='Contact' />
+  </ol>
+</nav>
