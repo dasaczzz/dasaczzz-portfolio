@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -5,4 +6,7 @@
   --color-secondary: #f2f2f2;
   --color-tertiary: #a6a6a6;
   --color-contrast: #82eecc;
+
+  --font-fragment: 'Fragment Mono', monospace;
+  --font-inter: 'Inter', sans-serif;
 }
