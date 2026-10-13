@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets'
+import Collage from '@images/Collage.png'
+import Zoo from '@images/Zoo.jpg'
+---
+
+<section class='h-[calc(fullscreen-100px)]'>
+  <Image src={Collage} alt='my gallery' />
+  <video
+    class='block aspect-video w-full object-cover'
+    autoplay
+    muted
+    loop
+    playsinline
+    preload='metadata'
+    poster={Zoo.src}
+    aria-label='Me at the zoo'
+  >
+    <source src='/videos/zoo.webm' type='video/webm' />
+    <source src='/videos/zoo.mp4' type='video/mp4' />
+  </video>
+</section>

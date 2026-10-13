@@ -1,0 +1,45 @@
+---
+import Card from '@generics/Card.astro'
+import Bash from '@icons/Bash.svg'
+import Web from '@icons/Web.svg'
+
+const experiences = [
+  {
+    icon: Web,
+    title: 'Ourbnb',
+    paragraph:
+      'Contributed to an online booking platform, from requirements, Figma design, develop frontend and backend, finally, deploy the site in the cloud.',
+    skills: ['Figma', 'Javascript', 'MongoDB'],
+  },
+  {
+    icon: Bash,
+    title: './dotfiles',
+    paragraph:
+      'A github repo to get a replicable workstation. After a fresh Debian installation, it automates the process of installing CLI utilities',
+    skills: ['Bash', 'IaC', 'Git'],
+  },
+]
+---
+
+<section class='flex flex-col gap-5 h-dvh justify-center pr-10 pl-5'>
+  <h2 class='text-5xl text-secondary font-semibold font-inter'>Experiences</h2>
+  <p class='text-base text-contrast font-fragment'>
+    Click a card to view project details
+  </p>
+  <div class='flex flex-row gap-5'>
+    <Card
+      title={experiences[0].title}
+      paragraph={experiences[0].paragraph}
+      skills={experiences[0].skills}
+    >
+      <Web slot='icon' width={40} height={40} />
+    </Card>
+    <Card
+      title={experiences[1].title}
+      paragraph={experiences[1].paragraph}
+      skills={experiences[1].skills}
+    >
+      <Bash slot='icon' width={40} height={40} />
+    </Card>
+  </div>
+</section>
