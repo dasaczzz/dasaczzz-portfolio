@@ -1,0 +1,12 @@
+---
+import Header from '@generics/Header.astro'
+---
+
+<div class='flex flex-col lg:flex-row relative'>
+  <aside class='sticky left-0 top-0 h-full w-1/2'>
+    <Header />
+  </aside>
+  <main class='flex-1'>
+    <slot />
+  </main>
+</div>
