@@ -1,9 +1,11 @@
 ---
+import Navbar from '@generics/Navbar.astro'
+import Wrapper from '@generics/Wrapper.astro'
 import '../global/global.css'
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='en' class='scroll-smooth'>
   <head>
     <meta charset='utf-8' />
     <meta name='generator' content={Astro.generator} />
@@ -13,7 +15,10 @@ import '../global/global.css'
     <title>Daniel Sanchez portfolio</title>
   </head>
 
-  <body>
-    <slot />
+  <body class='bg-primary-300'>
+    <Navbar />
+    <Wrapper>
+      <slot />
+    </Wrapper>
   </body>
 </html>
